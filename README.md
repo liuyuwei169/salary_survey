@@ -34,6 +34,9 @@ Are you currently applying for data science jobs?
 How would you describe your current happiness level?
 * Not happy to happy, 4 levels
 
+How often do you attend MDS career events?
+* 
+
 ### Plan of Attack
 
 EDA
