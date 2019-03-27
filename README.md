@@ -28,7 +28,11 @@ How prepared did you feel entering MDS?
 Do you typically do optional questions in labs?
 * Yes or No
 
+Are you currently applying for data science jobs?
+* Yes or No
 
+How would you describe your current happiness level?
+* Not happy to happy, 4 levels
 
 ### Plan of Attack
 
