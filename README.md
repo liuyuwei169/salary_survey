@@ -12,12 +12,85 @@
 ## Project Proposal
 
 #### Motivation and Primary Question
-The UBC Master of Data Science program is an intensive, professional degree program designed to prepare students for working in the industry. Naturally, landing that next job after graduation is a big focus for many students and discussions around salary expection will likely arise. Tying these ideas together, the question our team in interested in answering with the proposed survey is:
+The UBC Master of Data Science program is an intensive, professional degree program designed to prepare students for working in the industry. Naturally, landing that next job after graduation is a big focus for many students and discussions around salary expectation will likely arise. Tying these ideas together, the question our team in interested in answering with the proposed survey is:
 
 _Does a person's self-rated enjoyment of the MDS program influence their expected salary upon graduation?_
 
-#### Other Questions
-<<<<< **[TO DO / FILL IN]** Other questions you plan to ask in your survey to identify confounding variables and justify/explain why you plan to include them >>>>>>>
+#### Survey Questions
+
+##### List of Questions
+
+1) What is your salary expectation after graduation in CAD?
+* Less than $60,000
+* $60,000 to $80,000
+* $80,001 to $100,000
+* $100,001 to $120,000
+* More than $120,000
+
+2) What is your self rated enjoyment of MDS on a scale of 1 - 4?  With 4 being very happy with MDS and 1 being not happy at all with MDS.
+  * 1
+  * 2
+  * 3
+  * 4
+
+3) What was your previous salary prior to MDS?
+  * Less than $60,000
+  * $60,000 to $80,000
+  * $80,001 to $100,000
+  * $100,001 to $120,000
+  * More than $120,000
+
+4) How many years of professional work experience did you have prior to MDS?
+  * 0 - 1 Years
+  * 1 - 4 Years
+  * 4 - 7 Years
+  * 7 - 10 Years
+  * 10+ Years
+
+5) How confident in your data science skillset did you feel when first starting MDS on a scale of 1 - 4?  With 4 being very confident and 1 being not confident.
+  * 1
+  * 2
+  * 3
+  * 4
+
+6) Do you typically do optional questions in labs?
+  * Yes
+  * No
+
+7) Are you currently applying for data science jobs?
+  * Yes
+  * No
+
+8) How would you rate your current happiness level on a scale of 1-4?  With 4 being very happy, 1 being not happy.
+* 1
+* 2
+* 3
+* 4
+
+9) How often do you attend MDS career events?  For example, the panel on technical interview questions.
+* Not often
+* Sometimes
+* Often
+
+##### Justification of questions
+
+1) Our response variable.
+
+2) Our independent variable that we want to test.
+
+3) Previous salary could be confounding as it will effect future salary expectation, and could also effect happiness in the program.  For example, a low prior salary may make a person happier to enter MDS and have a potentially higher future salary.
+
+4) Years of work experience could be confounding as it will effect future salary expectations.  A person with more years of work experience might be not as happy to enter MDS.
+
+5) Prior confidence in data science skills would likely effect future salary expectations, and directly influence how happy they were in the program.  If a person is more confident, then they will likely have an easier time and be happier.
+
+6) Doing optional questions in labs indicates a person is likely finishing all of the required content with relative ease or likes a challenge.  If this is the case then they could be happier with MDS, and expect a larger salary to reflect their skillset.
+
+7) If people are applying for jobs currently, it could be affirming that MDS has prepared them adequately or the opposite.  This would affect their feelings about the program and consequently salary expectations.
+
+8) A baseline for happiness.  If they aren't happy, then maybe they aren't happy with MDS, and if they aren't happy then maybe they don't expect much of a salary.
+
+9) Attending career events could increase confidence in job opportunities and subsequently salary.  If the events are useful, then the feelings about MDS would likely change for the better.
 
 #### Analysis Approach
 
@@ -27,9 +100,9 @@ _Does a person's self-rated enjoyment of the MDS program influence their expecte
 
 > We will form subgroups of survey responses which have the same values of the confounding variables, with special consideration to the sizes of these groups to assess whether there are sufficient observations in each aggregated group.
 >
-> Then within each stratum, we assess the association between expected annual salary after graduation and self-reported enjoyment of the MDS program. We can do this by fitting a linear model where the response is expected salary and the predictor is the self-reported enjoyment of MDS.
+> Then within each stratum, we assess the association between expected annual salary after graduation and self-reported enjoyment of the MDS program. We can do this using an ordinal linear regression where the response is expected salary and the predictor is the self-reported enjoyment of MDS.
 
-3) We will interpet the results of the linear models across the strata and form a conclusion on the significance and size of the effect of MDS enjoyment on expected salary, having controlled for the confounders.
+3) We will interpret the results of the linear models across the strata and form a conclusion on the significance and size of the effect of MDS enjoyment on expected salary, having controlled for the confounders.
 
 #### Ethical Considerations
 <<<<< **[TO DO / FILL IN]** Discuss the aspects of the UBC Office of Research Ethics document on using Online Surveys that are relevant to your proposed survey. >>>>>
